@@ -1,5 +1,5 @@
 # Fix the broken deployment script
 
-A small shell-debugging task. The starter script is copied into the task container as `/workspace/deploy.sh`; the agent must make dry-run and argument handling safe and predictable.
+Repair `app/deploy.sh` to meet the behavior described in `task.yaml`.
 
-The test suite is copied into the container only after the agent finishes. `solution.sh` is the hidden reference solution used by the local harness's `oracle` agent.
+Run the visible tests with `python -m unittest discover -s tests -v`. `solution.sh` is the reference answer used by the local harness oracle.
