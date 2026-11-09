@@ -1,0 +1,6 @@
+2026-11-07 02:00:01 INFO starting sales ETL
+2026-11-07 02:00:02 WARNING currency GBP is not in allowed list
+2026-11-07 02:00:02 ERROR invalid literal for Decimal(): 'not_a_number'
+2026-11-07 02:00:03 WARNING duplicate order_id detected: A-1007
+2026-11-07 02:00:03 ERROR timezone-aware timestamp required for UTC output
+2026-11-07 02:00:04 INFO pipeline exited with validation errors

@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-terminal-bench"
+version = "0.3.0"
+description = "A minimal local Docker harness for terminal tasks"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0"]
+
+[project.scripts]
+mtb = "harness.runner:main"
+
+[tool.setuptools.packages.find]
+include = ["harness*"]

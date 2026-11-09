@@ -1,0 +1,12 @@
+order_id,region,amount,currency,occurred_at,status
+A-1001,West,1250.50,INR,2026-11-01T10:15:00+05:30,completed
+A-1002,East,300,USD,2026-11-01T18:45:00+05:30,completed
+A-1003,North,-50,INR,2026-11-02T09:00:00+05:30,completed
+A-1004,South,not_a_number,INR,2026-11-02T11:30:00+05:30,completed
+A-1005,West,999999999,INR,2026-11-03T08:00:00+05:30,completed
+A-1006,East,750.25,GBP,2026-11-03T12:00:00+05:30,completed
+A-1007,North,500,INR,2026-11-04T14:20:00+05:30,completed
+A-1007,North,500,INR,2026-11-04T14:25:00+05:30,completed
+A-1008,South,220,INR,2026-11-05T16:40:00+05:30,refunded
+A-1009,Central,180.75,INR,2026-11-06T10:10:00+05:30,completed
+A-1010,West,47949.50,INR,2026-11-06T19:55:00+05:30,completed

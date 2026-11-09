@@ -1,0 +1,17 @@
+input:
+  encoding: utf-8
+  delimiter: ","
+validation:
+  required_columns: [order_id, region, amount, currency, occurred_at]
+  allowed_currencies: [INR, USD]
+  min_amount: 0
+  max_amount: 1000000
+deduplication:
+  key: order_id
+  keep: last
+conversion:
+  usd_to_inr: "83"
+output:
+  timezone: UTC
+  summary_filename: sales_summary.json
+  rejected_filename: rejected.csv

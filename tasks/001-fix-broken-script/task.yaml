@@ -1,0 +1,13 @@
+name: fix-broken-script
+difficulty: easy
+instruction: |
+  Repair /workspace/deploy.sh.
+
+  Requirements:
+  - `./deploy.sh --dry-run` exits successfully and prints exactly `Dry run complete.`
+  - `./deploy.sh --help` prints a usage line and exits successfully.
+  - Missing or unsupported arguments print usage to stderr and exit with status 2.
+  - Do not perform a real deployment or create/modify other files.
+test_command: "python3 -m unittest discover -s /workspace/tests -v"
+solution_script: solution.sh
+time_limit_seconds: 300

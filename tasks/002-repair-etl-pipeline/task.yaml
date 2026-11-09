@@ -1,0 +1,23 @@
+name: repair-etl-pipeline
+difficulty: hard
+instruction: |
+  A nightly sales ETL pipeline is failing. Repair it without changing the public
+  interface in src/etl/__init__.py or modifying tests/ or expected_output/.
+
+  Requirements:
+  1. `make test` must pass.
+  2. `make run` must create output/sales_summary.json.
+  3. The summary must report:
+     - total_revenue: "75000.75"
+     - valid_rows: 6
+     - rejected_rows: 4
+     - top_region: "West"
+     - generated_at: ISO-8601 UTC timestamp ending in Z
+  4. output/rejected.csv must contain exactly four rejected rows plus a header.
+  5. Use the configured USD-to-INR conversion rate, not a hard-coded value.
+  6. Do not install packages or make network calls from the task container.
+
+  Investigate source code, configuration, data, and logs before editing.
+test_command: "make test && make run && python tests/validate_output.py"
+solution_script: solution.sh
+time_limit_seconds: 1800
